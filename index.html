@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitZone - Centro de Entrenamiento</title>
+
+  <link rel="stylesheet" href="style.css">
+  <a href="https://www.fitzone-app.com/" target="_blank">FitZone</a>
+</head>
+<body>
+
+
+  <header>
+    <nav>
+    <h1>FitZone</h1>
+    <ul>
+        <li><a href="#servicios">Planes</a></li>
+        <li><a href="#trabajos">Instalaciones</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="https://www.fitzone-app.com/" target="_blank">FitZone</a></li>
+    </ul>
+</nav>
+  </header>
+
+
+  <main class="container">
+
+    <section id="inicio">
+      <h2>Entrena con propósito, mira resultados reales</h2>
+      <p>FitZone es un centro de entrenamiento con planes flexibles, entrenadores certificados y equipos de última generación.</p>
+      <img src="img/images.jpg1.jpg" alt="Personas entrenando en el gimnasio FitZone">
+    </section>
+
+    <!-- Sección de Servicios / Planes -->
+    <section id="servicios">
+      <h2>Nuestros Planes</h2>
+
+      <ul class="row">
+        <li class="col-md-4 col-sm-6">
+          <article>
+            <img src="img/images.jpg2.jpg" alt="Área de pesas del gimnasio">
+            <h3>Entrenamiento de fuerza</h3>
+            <p>Acceso a la zona de pesas y máquinas con rutina personalizada.</p>
+          </article>
+        </li>
+        <li class="col-md-4 col-sm-6">
+          <article>
+            <img src="img/images.jpg3.jpg" alt="Clase grupal de cardio">
+            <h3>Clases grupales</h3>
+            <p>Rumba, spinning y funcional en horarios flexibles todos los días.</p>
+          </article>
+        </li>
+        <li class="col-md-4 col-sm-6">
+          <article>
+            <img src="img/StrengthandMobilityover50_appfeedvisual.jpg" alt="Entrenador personal asesorando a un cliente">
+            <h3>Entrenamiento personal</h3>
+            <p>Un entrenador dedicado a tus objetivos, con seguimiento semanal.</p>
+          </article>
+        </li>
+      </ul>
+
+
+      <table>
+        <caption>Planes y precios de membresía mensual</caption>
+        <thead>
+          <tr>
+            <th>Plan</th>
+            <th>Incluye</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Básico</td>
+            <td>Acceso a sala de pesas en horario diurno</td>
+            <td>$70.000</td>
+          </tr>
+          <tr>
+            <td>Full</td>
+            <td>Acceso completo + clases grupales ilimitadas</td>
+            <td>$120.000</td>
+          </tr>
+          <tr>
+            <td>VIP</td>
+            <td>Acceso completo + entrenador personal 2 veces por semana</td>
+            <td>$220.000</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Galería de instalaciones -->
+    <section id="trabajos">
+      <h2>Nuestras Instalaciones</h2>
+      <ul class="row">
+        <li class="col-md-4 col-sm-6">
+          <img src="img/images.jpg5.jpg" alt="Zona de cardio del gimnasio">
+        </li>
+        <li class="col-md-4 col-sm-6">
+          <img src="img/Disena-tu-gimnasio-en-casa-con-Behuma isabel.jpg" alt="Zona de pesas libres">
+        </li>
+        <li class="col-md-4 col-sm-6">
+          <img src="img/El-gimnasio-CARD-cumple-tres-meses-en-Ciudad-de-la-Costa-Uruguay.jpeg" alt="Salón de clases grupales">
+        </li>
+      </ul>
+    </section>
+
+
+    <section id="contacto">
+      <h2>Agenda tu clase de prueba</h2>
+
+      <form action="procesar-contacto.php" method="post">
+
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <p>¿Qué plan te interesa?</p>
+
+        <label for="plan1">
+          <input type="checkbox" id="plan1" name="planes" value="basico">
+          Básico
+        </label>
+
+        <label for="plan2">
+          <input type="checkbox" id="plan2" name="planes" value="full">
+          Full
+        </label>
+
+        <p>Horario preferido:</p>
+
+        <label for="horario1">
+          <input type="radio" id="horario1" name="horario" value="manana">
+          Mañana
+        </label>
+
+        <label for="horario2">
+          <input type="radio" id="horario2" name="horario" value="noche">
+          Noche
+        </label>
+
+        <label for="mensaje">Cuéntanos tu objetivo</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>FitZone</p>
+  </footer>
+
+</body>
+</html>
